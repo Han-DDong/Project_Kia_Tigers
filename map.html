@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ⬇️ css link -->
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/defult.css">
+  <!-- ⬇️ 웹페이지 로고 -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- ⬇️ 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ⬇ 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/51772bd9bd.js" crossorigin="anonymous"></script>
+  <!-- ⬇ jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ⬇ javascript -->
+  <script src="js/script.js" defer></script>
+  <!-- ⬇ 구글맵 API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7z6CRQKTbl1Q1OcKOdt-nt_lnB9uTAcY&callback=myMap" defer></script>
+  <title>KIA타이거즈</title>
+</head>
+
+<body>
+  <header>
+    <!-- 헤더 -->
+    <nav class="navbar">
+      <div class="nav_logo"><a href="index.html">
+        <img src="img/logo_2021.png" alt="home">
+      </a></div>
+
+      <ul class="nav_menu">
+        <li><a href="tigers.html">TIGERS</a></li>
+        <li><a href="players.html">PLAYERS</a></li>
+        <li><a href="#">CONTENTS</a></li>
+        <li><a
+            href="https://m.sports.naver.com/kbaseball/schedule/index?category=kbo&date=2024-05-01&teamCode=HT">GAME</a>
+        </li>
+        <li><a href="#">TICKET</a></li>
+        <li><a href="#">MEMBERSHIP</a></li>
+      </ul>
+
+      <ul class="nav_icon">
+        <li><a href="loginform.html"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-plus fa-xl"></i></a></li>
+        <li><a href="map.html"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></li>
+        <li><a href="https://teamstore.tigers.co.kr/"><i class="fa-solid fa-store fa-xl"></i></a></li>
+      </ul>
+
+      <a href="#" class="navbar_tooglebtn"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+  </header>
+
+  <!-- 구장소개 카테고리 이미지 -->
+  <div class="map_img">
+    <h2>🏟️ 구장소개 🏟️</h2>
+  </div>
+
+  <!-- 구장소개 -->
+  <div class="champ_container">
+    <div class="champinfo">
+      <h1><span>광주 - 기아</span>
+        &nbsp;
+        <span class="txtred">챔피언스 필드</span>
+      </h1>
+      <h5>국내 최신, 최고의 시설! 미래를 만드는 꿈의 구장!
+        <br>
+        광주-기아 챔피언스 필드입니다.
+      </h5>
+      <div class="overlay-info">
+        <table>
+          <tr>
+            <td>구장 :</td>
+            <td>광주-기아 챔피언스 필드</td>
+          </tr>
+          <tr>
+            <td>주소 :</td>
+            <td>광주 북구 서림로 10</td>
+          </tr>
+          <tr>
+            <td>좌석 :</td>
+            <td>관람석 20,500석</td>
+          </tr>
+          <tr>
+            <td>면적 :</td>
+            <td>57,646㎥</td>
+          </tr>
+          <tr>
+            <td>규모 :</td>
+            <td>지하 2층 지상 5층</td>
+          </tr>
+          <tr>
+            <td>펜스 :</td>
+            <td>좌·우 99m, 중앙 121m</td>
+          </tr>
+          <tr>
+            <td>특징 :</td>
+            <td>국내 최초 개방형 야구장</td>
+          </tr>
+          <tr>
+            <td>사무실 :</td>
+            <td>광주 북구 서림로 10 광주-기아 챔피언스 필드 내2층</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- 찾아오는길 -->
+    <article>
+      <div class="location_container">
+        <div class="location">
+          <h2><i class="fa-solid fa-location-dot"></i> <span class="location_text">챔피언스필드 오시는 길</span></h2>
+        </div>
+        <div class="location_info">
+          <ul>
+            <li>
+              <dl>
+                <dt><i class="fas fa-bus"></i> 광천동 유스퀘어 광주종합버스터미널 👉 광주기아챔피언스필드 정문 (시외버스 및 고속버스 이용시)</dt>
+                <dd class="bus">
+                  <span class="transport-label"><i class="fas fa-bus color-green"></i> 버스 이용:</span>
+                  1️⃣ 매월26, 일곡38, 송암47, 상무64번 승차 👉 제2광천교 정류장 하차 👉 도보로 6분 이동(총 13분 소요)<br>
+                  2️⃣ 매월16 승차 👉 광주기아챔피언스필드 정문 정류장 하차 👉 도보로 3분 이동(총 12분 소요)<br>
+                  3️⃣ 용전84 승차 👉 임동주공아파트 정류장 하차 👉 도보로 5분 이동(총 12분 소요)<br>
+                </dd>
+                <dd class="taxi">
+                  <span class="transport-label"><i class="fas fa-taxi"></i> 택시 이용:</span>
+                  유스퀘어 택시 승강장 승차 👉 챔피언스필드 정문 하차(5분 소요)
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><i class="fa-solid fa-train"></i> 광주송정역 👉 광주기아챔피언스필드 정문 (KTX 및 SRT 이용시)</dt>
+                <dd class="bus">
+                  <span class="transport-label"><i class="fas fa-bus color-green"></i> 버스 이용:</span>
+                  광주송정역 정류장 송정98 승차 👉 무등야구장 정류장 하차(챔피언스필드 후문쪽) 👉 도보로 5분 이동(정문)
+                </dd>
+                <dd class="subwaybus">
+                  <span class="transport-label"><i class="fa-solid fa-train color-plus"></i><span>+</span><i
+                      class="fas fa-bus color-plus"></i> 지하철+버스 이용:</span>
+                  1️⃣ 광주송정역 4번 출구까지 도보 이동(3분 소요) 👉 광주송정역 1호선 녹동방면 지하철 승차 👉 화정역 하차 👉 4번 출구로 나와서 화정현대아파트 정류장까지 도보 이동(5분
+                  소요) 👉 매월 26 승차 👉 제2광천교 정류장 하차 👉 도보 6분 이동(총 37분 소요)<br>
+                  2️⃣ 광주송정역 4번 출구까지 도보 이동(3분 소요) 👉 광주송정역 1호선 녹동방면 지하철 승차 👉 쌍촌역 하차 👉 4번 출구로 나와서 상무1동행정복지센터 정류장까지 도보
+                  이동(4분 소요) 👉 송암47 승차 👉 제2광천교 정류장 하차 👉 도보 6분 이동(총 36분 소요)
+                </dd>
+                <dd class="subwaytaxi">
+                  <span class="transport-label"><i class="fa-solid fa-train plus1"></i><span>+</span><i
+                      class="fas fa-taxi plus1"></i> 지하철+택시 이용:</span>
+                  광주송정역 👉 농성역 하차 👉 택시 이용
+                </dd>
+                <dd class="taxi">
+                  <span class="transport-label"><i class="fas fa-taxi"></i> 택시 이용:</span>
+                  광주송정역 택시 승강장 승차 👉 챔피언스필드 정문 하차(30분 소요)
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><i class="fa-solid fa-plane-departure"></i> 광주공항 👉 광주기아챔피언스필드 정문 (비행기 이용시)</dt>
+                <dd class="bus">
+                  <span class="transport-label"><i class="fas fa-bus color-green"></i> 버스 이용:</span>
+                  공항역 정류장 일곡38 승차 👉 제2광천교 정류장 하차 👉 도보 6분 이동(총 50분 소요)
+                </dd>
+                <dd class="subway">
+                  <span class="transport-label"><i class="fas fa-train color-blue"></i> 지하철 이용:</span>
+                  공항역 승차 후 KTX 및 SRT 이용 시와 같음
+                </dd>
+                <dd class="taxi">
+                  <span class="transport-label"><i class="fas fa-taxi"></i> 택시 이용:</span>
+                  광주공항 택시 승강장 승차 👉 챔피언스필드 정문 하차(25분 소요)
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- 지도 -->
+    <article>
+      <div class="map_container">
+        <div class="mapinfo">
+          <h2><i class="fa-solid fa-location-dot"></i> <span class="location_text">챔피언스필드 위치</span></h2>
+          <div id="map" style="width: 100%; height: 500px;"></div>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- 푸터 -->
+    <footer>
+      <div class="container">
+        <!-- 푸터A : 사이트 정보 -->
+        <div class="footA"></div>
+        <!-- 푸터B : 푸터 메뉴 -->
+        <nav class="footB">
+          <div>
+            <h3>MEMBERSHIP</h3>
+            <ul>
+              <li><a href="#">포인트 제도 안내</a></li>
+              <li><a href="#">호랑이 사랑방</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">1:1 문의</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>TICKET</h3>
+            <ul>
+              <li><a href="#">티켓 안내 및 예매</a></li>
+              <li><a href="#">시즌권 안내</a></li>
+              <li><a href="#">스카이박스 시즌권 안내</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>CONTENTS</h3>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">타이거즈 뉴스</a></li>
+              <li><a href="#">타이거즈 포토</a></li>
+              <li><a href="#">타이거즈TV</a></li>
+            </ul>
+          </div>
+
+        </nav>
+        <!-- 푸터C : 저작권-->
+        <div class="footC">
+          © KIA Ti corp. All rights reserved.
+        </div>
+        <!-- 푸터D : SNS 아이콘 -->
+        <nav class="footD">
+          <ul>
+            <li><a href="https://twitter.com/Kiatigers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span
+                  class="fa fa-twitter" title="Twitter"></span></a></li>
+            <li><a href="https://www.facebook.com/Victory.KiaTigers/?locale=ko_KR"><span class="fa fa-facebook"
+                  title="Facebook"></span></a></li>
+            <li><a href="https://namu.wiki/w/KIA%20%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88"><span class="fa fa-google-plus"
+                  title="Google Plus"></span></a></li>
+            <li><a href="https://www.instagram.com/always_kia_tigers/reels/"><span class="fa fa-instagram"
+                  title="Instagram"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCKp8knO8a6tSI1oaLjfd9XA"><span class="fa fa-youtube"
+                  title="YouTube"></span></a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </footer>
+</body>
+
+</html>

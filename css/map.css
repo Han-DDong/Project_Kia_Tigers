@@ -1,0 +1,201 @@
+/* 구장소개 카테고리 이미지 */
+.map_img {
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_bg.png);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-top: 100px;  
+  width: 100%;
+  height: 150px;
+}
+
+.map_img h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 45px;
+  font-weight: 400;
+  font-family:"Ubuntu Sans", sans-serif;
+  padding-top: 60px;
+}
+
+/* 챔피언스필드에 대한 소개와 정보 */
+.champ_container {
+  position: relative;
+  background-image: url(https://tigers.co.kr/files/resource/2020/03/10/20200310132332.8b3-67afebfcfa41.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: calc(550 / 1200 * 100%);
+}
+
+.champinfo {
+  position: absolute; /* 상대적 위치 지정 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px; /* 내용과 경계 사이의 여백 */
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column; /* 세로 방향 정렬 */
+  justify-content: center; 
+  align-items: left; 
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.txtred {
+  color: red;
+}
+
+.champinfo h1 {
+  font-weight: bold;
+}
+
+.champinfo h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h5::after {
+  content: "";
+  display: block;
+  width: 430px; /* 밑줄 길이 조절 */
+  border-bottom: 3px solid red;
+  margin-top: 20px;
+}
+
+.overlay-info table {
+  width: 100%; /* 테이블을 컨테이너의 전체 너비로 설정 */
+  border-collapse: collapse; /* 테이블 셀 간의 경계선을 하나로 합칩니다 */
+}
+
+.overlay-info td:first-child {
+  font-weight: bold; /* 첫 번째 열의 글자를 굵게 */
+}
+.overlay-info td:last-child {
+  width: 92%; /* 두 번째 열의 너비를 더 넓게 설정 */
+}
+
+/* 찾아오는길 */
+.location_container {
+  font-family: Arial, sans-serif; /* 일관된 서체 사용 */
+  margin: 20px; /* 여백 조정 */
+  background-color: #f8f9fa; /* 배경색 설정 */
+  border: 1px solid #dee2e6; /* 테두리 설정 */
+  border-radius: 8px; /* 경계선 둥글게 처리 */
+  padding: 20px; /* 내부 패딩 */
+}
+
+.location h2 {
+  color: #0056b3; /* 제목 색상 */
+  font-size: 24px; /* 제목 크기 */
+}
+
+.location_text {
+  margin-left: 10px; /* 아이콘과 텍스트 사이 간격 */
+}
+
+.location_info ul {
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+.location_info dt {
+  font-weight: bold; /* 용어 굵게 */
+  margin-top: 20px; /* 각 용어 위에 상단 마진 추가 */
+}
+
+.location_info dd {
+  margin-left: 20px; /* 정의에 왼쪽 마진 추가 */
+  margin-bottom: 10px; /* 각 정의 아래 마진 추가 */
+  padding-left: 20px; /* 내용에 왼쪽 패딩 추가 */
+}
+
+/* 특정 교통 수단에 대한 스타일 클래스 */
+.bus, .taxi, .subway, .subwaybus, .subwaytaxi {
+  border-left: 3px solid; /* 왼쪽 테두리 선 */
+  padding-left: 10px; /* 왼쪽 패딩 */
+  margin-bottom: 10px; /* 아래쪽 마진 */
+}
+
+.transport-label {
+  font-weight: bold;
+}
+
+.bus { border-color: #28a745; } /* 버스는 녹색 */
+.taxi { border-color: #ffc107; } /* 택시는 황금색 */
+.subway { border-color: #007bff; } /* 지하철은 파란색 */
+.subwaybus { border-color: #17a2b8; } /* 지하철+버스 조합은 청록색 */
+.subwaytaxi { border-color: #6f42c1; } /* 지하철+택시 조합은 보라색 */
+
+/* 아이콘 스타일 */
+.fa-location-dot {
+  color: #dc3545; /* 아이콘 색상 */
+}
+.color-green { /* 버스만 이용시 */
+  color: #28a745;
+}
+.fa-taxi {  /* 택시만 이용시 */
+  color: #ffc107;
+}
+
+.color-plus { /* 지하철 + 버스 이용시 */
+  color: #17a2b8;
+}
+
+.plus1 { /* 지하철 + 택시 */
+  color: #6f42c1;
+}
+
+.color-blue { /* 지하철만 이용 */
+  color: #007bff;
+}
+
+
+/* 구장위치 */
+.map_container {
+  font-family: Arial, sans-serif; /* 일관된 서체 사용 */
+  margin: 20px; /* 여백 조정 */
+  padding: 20px; /* 내부 패딩 */
+  background-color: #f8f9fa; /* 배경색 설정 */
+  border: 1px solid #dee2e6; /* 테두리 설정 */
+  border-radius: 8px; /* 경계선 둥글게 처리 */
+}
+
+.mapinfo h2 {
+  color: #0056b3; /* 제목 색상 */
+  font-size: 24px; /* 제목 크기 */
+}
+
+
+/******************** PC **********************/
+@media screen and (min-width: 1025px) {
+}
+
+/******************** 테블릿 **********************/
+@media screen and (max-width: 1024px) {
+  .champinfo {
+    padding-left: 8%; /* 좌측에 여백을 조금 줄입니다 */
+    font-size: 0.65em; /* 더 작은 글자 크기 */
+  }
+}
+
+/******************** 모바일 **********************/
+@media screen and (max-width: 540px) {
+  .champinfo {
+    padding-left: 5%; /* 모바일에서는 더 좁은 여백을 설정 */
+    font-size: 0.55em; /* 더 작은 글자 크기 */
+  }
+
+  h5::after {
+    content: "";
+    display: block;
+    width: 320px; /* 밑줄 길이 조절 */
+    border-bottom: 3px solid red;
+    margin-top: 20px;
+  }
+}

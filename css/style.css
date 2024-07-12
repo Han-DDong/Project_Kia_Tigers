@@ -1,0 +1,569 @@
+/* 기본 CSS 초기화 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 네비게이션 바 */
+header {
+  position: fixed; /* 헤더를 화면 상단에 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 화면 전체 너비 */
+  z-index: 1000; /* 다른 요소들 위에 위치 */
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_bg2.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+/* 네비게이션 로고 */
+.nav_logo {
+  width: 120px; /* max-width를 width로 변경 */
+  height: 90px; /* max-height를 height로 변경 */
+  display: block;
+}
+
+.nav_logo a > img {
+  display: block; /* 링크를 블록 요소로 만듭니다 */
+  width: 120px;
+  height: 100px;
+}
+
+/* 네비게이션 메뉴 */
+.nav_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav_menu li {
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.nav_menu li:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* 네비게이션 아이콘 */
+.nav_icon {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.nav_icon li {
+  padding: 8px 12px;
+}
+
+.nav_icon li > a,
+.nav_menu li > a {
+  color: white;
+}
+
+/* 네비게이션 메뉴 반응형 일때 햄버거 아이콘 토글 */
+.navbar_tooglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 50px;
+  color: red;
+}
+
+/* 슬라이드쇼 컨테이너 스타일 */
+.main_container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.schedule_container,
+.slideshow-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%; /* 두 섹션이 일렬로 정렬되도록 너비 조정 */
+}
+
+/* 슬라이드쇼 이미지 */
+.slideshow-container h2 {
+  font-size: 2em; /* 글자 크기 조정 */
+  font-weight: bold; /* 글자 두께 조정 */
+  color: rgb(249, 61, 61); /* 글자색 변경 */
+  text-align: center; /* 중앙 정렬 */
+  margin-bottom: 20px; /* 아래 여백 추가 */
+  text-transform: uppercase; /* 대문자 변환 */
+  letter-spacing: 2px; /* 글자 사이 간격 조정 */
+  border-bottom: 2px solid #ddd; /* 아래쪽 테두리 추가 */
+  padding-bottom: 10px; /* 아래쪽 패딩 추가 */
+}
+
+.mySlides {
+  display: none;
+  width: 70%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  border-radius: 8px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 경기일정 */
+.schedule_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background-color: #f9f9f9; /* 배경색 추가 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 약간의 그림자 추가 */
+  border-radius: 8px; /* 둥근 모서리 */
+  padding: 20px; /* 안쪽 여백 추가 */
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.schedule_container h2 {
+  font-size: 2em; /* 글자 크기 조정 */
+  font-weight: bold; /* 글자 두께 조정 */
+  color: #333; /* 글자색 변경 */
+  text-transform: uppercase; /* 대문자 변환 */
+  letter-spacing: 2px; /* 글자 사이 간격 조정 */
+}
+
+.schedule {
+  border: 2px solid #ddd; /* 연한 테두리 색상 */
+  border-radius: 8px; /* 둥근 모서리 */
+  width: 100%;
+  padding: 20px; /* 안쪽 여백 추가 */
+  background-color: #fff; /* 흰색 배경 */
+  box-sizing: border-box; /* 패딩 포함 박스 사이징 */
+  margin: 10px;
+}
+
+.date h5 {
+  margin-left: 10px;
+  font-size: 1em; /* 폰트 크기 조정 */
+  font-weight: 600; /* 폰트 두께 조정 */
+  color: #333; /* 글자색 변경 */
+}
+
+.game {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0; /* 상단 여백 추가 */
+  display: flex;
+  justify-content: space-between; /* 요소 간 간격 조정 */
+  align-items: center;
+}
+
+.game li {
+  margin: 0 15px; /* 요소 간 간격 조정 */
+  font-size: 1.2em; /* 폰트 크기 조정 */
+  color: #666; /* 기본 글자색 */
+}
+
+.game li img {
+  width: 30px; /* 아이콘 크기 조정 */
+  height: 30px;
+}
+
+.game li:first-child {
+  font-weight: bold;
+  font-size: 1em; /* 시간 크기 조정 */
+  color: #333; /* 색상 변경 */
+}
+
+.game li:nth-child(2) {
+  font-size: 14px;
+  color: #999; /* 장소 색상 변경 */
+}
+
+.game li:nth-child(3),
+.game li:last-child {
+  font-size: 15px;
+  color: #000; /* 팀 이름 색상 변경 */
+  font-weight: 700; /* 팀 이름 두께 조정 */
+}
+
+.game li:nth-child(4) {
+  font-size: 14px;
+  font-weight: bold; /* vs 두께 조정 */
+  color: #333; /* 색상 변경 */
+}
+
+.slideshow-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.home {
+  /* 경기 홈구장 표시 */
+  background-color: #ccc;
+  color: white;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+/* 경기일정 버튼 */
+button.prev,
+button.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75em;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50% -50%);
+}
+
+button.prev {
+  margin-top: 12px;
+  left: 0;
+}
+
+button.next {
+  margin-top: 12px;
+  right: 0;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* 메인 이미지 */
+.main_img {
+  background-image: url(/img/kia_main.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  width: 100%;
+  height: 400px;
+}
+
+/* 푸터 */
+footer {
+  background-color: black;
+  color:aliceblue;
+}
+
+footer .container{
+  padding: 40px 20px;  /*안쪽 여백*/
+}
+/* 푸터A : 사이트 정보 */
+.footA {
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_logo.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+/* 푸터A : 사이트 정보 */
+.footA h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  letter-spacing:  0.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footA p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footA a {
+  color: inherit; /* 부모요소의 색상 사용 */
+  text-decoration: none;
+}
+/* 푸터B : 푸터 메뉴 */
+.footB h3 {
+  margin-top:  0;
+  margin-bottom: 10px;
+  border-bottom: solid 1px currentColor;
+  font-size: 14px;    
+}
+
+.footB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+.footB a:hover {
+  color: red;
+}
+.footB div {
+  margin-bottom: 20px;
+}
+
+/* 푸터C: 저작권 */
+.footC {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* 푸터D: SNS 메뉴 */
+.footD {
+  margin-top: 20px;
+}
+
+.footD ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* 아이콘 가로 정렬 */
+
+}
+
+.footD a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  padding: 0;
+  /* 아이콘을 둥근 테두리 감싸기 */
+  border: solid 1px currentColor;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 8px; /* 아이콘간 간격 */
+
+}
+
+.footD a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/******************** PC **********************/
+@media screen and (min-width: 1025px) {
+  .footB {
+    display: flex;
+  }
+  /* div 들의 비율 1:1:1 로 만들기 */
+  .footB div {
+    flex: 1;
+  }
+  /* 메뉴 사이의 여백 확보 */
+  .footB div:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+/******************** 테블릿 **********************/
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_menu li > a {
+    color: black;
+  }
+
+  .nav_icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_logo {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar_tooglebtn {
+    display: block;
+  }
+
+  .nav_menu.active {
+    display: flex;
+    background-image: url(https://tigers.co.kr/img/sub/list_no_img.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav_icon.active {
+    display: flex;
+  }
+
+  /* 슬라이드 */
+  .mySlide {
+    flex: 50%; /* 테블릿에서는 두 개씩 보임 */
+    max-width: 50%;
+  }
+
+  .footA {
+    width: 230px; /* 태블릿에서의 너비 축소 */
+    height: 75px; /* 태블릿에서의 높이 축소 */
+  }
+  .footB {
+    display: flex;
+  }
+  /* div 들의 비율 1:1:1 로 만들기 */
+  .footB div {
+    flex: 1;
+  }
+  /* 메뉴 사이의 여백 확보 */
+  .footB div:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+/******************** 모바일 **********************/
+@media screen and (max-width: 540px) {
+  /* navbar 모바일 */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_menu li > a {
+    color: black;
+  }
+
+  .nav_icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_logo {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar_tooglebtn {
+    display: block;
+  }
+
+  .nav_menu.active {
+    display: flex;
+    background-image: url(https://tigers.co.kr/img/sub/list_no_img.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav_icon.active {
+    display: flex;
+  }
+
+   /* 푸터 */
+   footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 위 쪽의 컨텐츠와 너비 맞추기 */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footA {flex: 0 0 40%;}  /* 사이트정보 40% */
+.footB {flex: 0 0 60%;}  /* 푸터 메뉴 60% */
+.footC {flex: 0 0 100%;} /* 저작권 100% */
+
+.footA {
+height: 55px;
+}
+
+.footB {
+  display: flex;
+  white-space: nowrap;
+}
+/* div 들의 비율 1:1:1 로 만들기 */
+.footB div {
+  flex: 1;
+}
+/* 메뉴 사이의 여백 확보 */
+.footB div:not(:first-child) {
+  margin-left: 40px;
+}
+
+  /* 경기일정 버튼 위치 */
+  button.prev,
+  button.next {
+    margin-top: 13px;
+  }
+}

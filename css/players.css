@@ -1,0 +1,176 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+  /* 플레이어바 이미지 */
+  .plyerbar_img {
+    background-image: url(https://tigers.co.kr/img/main/mb_menu_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;  
+    width: 100%;
+    height: 150px;
+  }
+
+  .plyerbar_img h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 400;
+    font-family:"Ubuntu Sans", sans-serif;
+    padding-top: 60px;
+  }
+
+  /* 선수단 선택 select */
+  .player_select {
+    background-image: url(https://tigers.co.kr/img/sub/list_no_img.png);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .player_select b {
+    padding-bottom: 30px;
+  }
+
+  .player {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+
+    /* 다른 브라우저에서 선택 박스의 기본 스타일을 제거하고 커스텀 스타일 적용 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    /* 셀렉터 화살표 이미지 */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3E%3Cpath fill=\'%23333\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px 10px;
+}
+
+.player:hover {
+    border-color: #888;
+}
+
+.player:focus {
+    border-color: #555;
+    outline: none;
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+}
+
+/* 선택 박스 기본 화살표 숨기기 (일부 브라우저에서) */
+.player::-ms-expand {
+    display: none;
+}
+
+
+  /* 플레이어 이미지 */
+  .list {
+    background-image: url(https://tigers.co.kr/img/main/mb_menu_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+  }
+
+  .clear {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 항목을 가로로 정렬 */
+  }
+
+  .clear li {
+    padding: 0 10px 10px 0;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+  }
+
+  .clear li img {
+    box-shadow: 0 4px 8px rgb(156, 131, 131);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .txt {
+    padding: 10px;
+    color: aliceblue;
+  }
+
+  .txt ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    background: rgba(3, 3, 3, 0.7);
+    box-shadow: 0 4px 8px rgb(237, 232, 232);
+    list-style-type: none;
+  }
+
+  .txt li {
+    margin: 0;
+    padding: 8px;
+  }
+
+  .num, .name {
+    font-size: 20px;
+  }
+  .num {
+    color: red;
+    font-weight: 400;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .position {
+    color: lightcyan;
+  }
+
+  /* player select*/
+  .hidden {
+    display: none;
+  }
+
+
+
+/******************** 모바일 **********************/
+@media screen and (max-width: 540px) { /* 모바일에서는 선수 이미지가 2개씩 정렬되서 보이게 */
+  .clear li {
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font-size: 1em;
+  }
+
+  /* 군입대 선수 글씨 조정 + 글씨 안잘리게 */
+  #soldier .profile .txt ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* 한 줄에 표시되도록 설정 */
+    justify-content: center;
+  }
+
+  #soldier .profile .txt ul li {
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  #soldier .profile .txt ul li.position {
+    font-size: 0.5em; /* 원하는 크기로 설정 */
+    text-align: left;
+  }
+}

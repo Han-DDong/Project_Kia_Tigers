@@ -1,0 +1,354 @@
+/* 헤더 푸터 고정 css */
+
+/* 기본 CSS 초기화 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* nav bar */
+header {
+  position: fixed; /* 헤더를 화면 상단에 고정 */
+  top: 0; /* 상단에 위치 */
+  width: 100%; /* 화면 전체 너비 */
+  z-index: 1000; /* 다른 요소들 위에 위치 */
+}
+
+.navbar a {
+text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_bg2.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.nav_logo {
+  width: 120px; /* max-width를 width로 변경 */
+  height: 90px; /* max-height를 height로 변경 */
+  display: block;
+}
+
+.nav_logo a > img {
+  display: block; /* 링크를 블록 요소로 만듭니다 */
+  width: 120px;
+  height: 100px;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav_menu li {
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.nav_menu li:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+
+.nav_icon {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.nav_icon li {
+  padding: 8px 12px;
+}
+
+.nav_icon li > a,
+.nav_menu li > a{
+  color: white;
+}
+
+.navbar_tooglebtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 50px;
+  color: red;
+}
+
+
+footer {
+  background-color: black;
+  color:aliceblue;
+}
+
+footer .container{
+  padding: 40px 20px;  /*안쪽 여백*/
+}
+/* 푸터A : 사이트 정보 */
+.footA {
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_logo.png);
+  background-size:  cover;
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+/* 푸터A : 사이트 정보 */
+.footA h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  letter-spacing:  0.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.footA p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footA a {
+  color: inherit; /* 부모요소의 색상 사용 */
+  text-decoration: none;
+}
+/* 푸터B : 푸터 메뉴 */
+.footB h3 {
+  margin-top:  0;
+  margin-bottom: 10px;
+  border-bottom: solid 1px currentColor;
+  font-size: 14px;    
+}
+
+.footB ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+.footB a:hover {
+  color: red;
+}
+.footB div {
+  margin-bottom: 20px;
+}
+
+/* 푸터C: 저작권 */
+.footC {
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* 푸터D: SNS 메뉴 */
+.footD {
+  margin-top: 20px;
+}
+
+.footD ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* 아이콘 가로 정렬 */
+
+}
+
+.footD a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  padding: 0;
+  /* 아이콘을 둥근 테두리 감싸기 */
+  border: solid 1px currentColor;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+
+  margin-right: 8px; /* 아이콘간 간격 */
+
+}
+
+.footD a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/******************** PC **********************/
+@media screen and (min-width: 1025px) {
+  .footB {
+    display: flex;
+}
+/* div 들의 비율 1:1:1 로 만들기 */
+.footB div {
+    flex: 1;
+}
+/* 메뉴 사이의 여백 확보 */
+.footB div:not(:first-child) {
+    margin-left: 40px;
+}
+}
+
+
+/******************** 테블릿 **********************/
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_menu li > a {
+    color: black;
+  }
+
+  .nav_icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_logo {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar_tooglebtn {
+    display: block;
+  }
+
+  .nav_menu.active {
+    display: flex;
+    background-image: url(https://tigers.co.kr/img/sub/list_no_img.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav_icon.active {
+    display: flex;
+  }
+
+  
+  .footA {
+    width: 230px; /* 태블릿에서의 너비 축소 */
+    height: 75px; /* 태블릿에서의 높이 축소 */
+  }
+  .footB {
+    display: flex;
+}
+/* div 들의 비율 1:1:1 로 만들기 */
+.footB div {
+    flex: 1;
+}
+/* 메뉴 사이의 여백 확보 */
+.footB div:not(:first-child) {
+    margin-left: 40px;
+}
+}
+
+
+/******************** 모바일 **********************/
+@media screen and (max-width: 540px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .nav_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_menu li > a {
+    color: black;
+  }
+
+  .nav_icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_logo {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar_tooglebtn {
+    display: block;
+  }
+
+  .nav_menu.active {
+    display: flex;
+    background-image: url(https://tigers.co.kr/img/sub/list_no_img.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .nav_icon.active {
+    display: flex;
+  }
+
+  /* 푸터 */
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 위 쪽의 컨텐츠와 너비 맞추기 */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footA {flex: 0 0 40%;}  /* 사이트정보 40% */
+.footB {flex: 0 0 60%;}  /* 푸터 메뉴 60% */
+.footC {flex: 0 0 100%;} /* 저작권 100% */
+
+.footA {
+height: 55px;
+}
+
+.footB {
+  display: flex;
+  white-space: nowrap;
+}
+/* div 들의 비율 1:1:1 로 만들기 */
+.footB div {
+  flex: 1;
+}
+/* 메뉴 사이의 여백 확보 */
+.footB div:not(:first-child) {
+  margin-left: 40px;
+}
+}

@@ -1,0 +1,137 @@
+/* 카테고리 이미지 */
+.tigerbar_img {
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_bg.png);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-top: 100px;  
+  width: 100%;
+  height: 150px;
+}
+
+.tigerbar_img h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 45px;
+  font-weight: 400;
+  font-family:"Ubuntu Sans", sans-serif;
+  padding-top: 60px;
+}
+
+
+.tiger_img {
+  background-image: url(https://tigers.co.kr/img/sub/mb_vs2_login.png);
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100px;
+}
+
+/* 구단소개  메인 이미지 */
+.tigercontainer {
+  padding: 20px;
+  width: 100%;
+}
+
+.tigersmain {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tigervs {
+  text-align: center;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+.tigermain_img img {
+ width: 100%;
+}
+
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+.tigervs h1{
+  margin: 35px 0 20px;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: red;
+}
+
+.tigervs h3 {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+/* 구단소개 */
+article {
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.arti_text {
+  margin-left:100px;
+}
+
+.arti_text h1 {
+  font-weight: bold;
+
+}
+
+.arti_text p {
+  color: #666666;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+.arti img{
+  width: 250px;
+  padding-top: 5px;
+  border: none;
+  vertical-align: middle;;
+}
+
+/******************** 모바일 **********************/
+@media screen and (max-width: 540px) {
+  article {
+    flex-direction: row; /* 강제로 한 줄에 배치 */
+    flex-wrap: nowrap; /* 내용이 줄바꿈 없이 표시 */
+  }
+
+  .arti img {
+    width: 150px; /* 모바일에서는 이미지 크기 축소 */
+  }
+
+  .arti_text {
+    margin-left: 20px; /* 모바일에서는 간격 축소 */
+  }
+
+  .arti_text h1, .arti_text p {
+    font-size: 1em; /* 모바일에서는 텍스트 크기 감소 */
+  }
+}
+
+/******************** 테블릿 **********************/
+@media screen and (max-width: 1024px) {
+  article {
+    flex-direction: row; /* 강제로 한 줄에 배치 */
+    flex-wrap: nowrap; /* 내용이 줄바꿈 없이 표시 */
+  }
+
+  .arti img {
+    width: 150px; /* 모바일에서는 이미지 크기 축소 */
+  }
+
+  .arti_text {
+    margin-left: 20px; /* 모바일에서는 간격 축소 */
+  }
+
+  .arti_text h1, .arti_text p {
+    font-size: 1em; /* 모바일에서는 텍스트 크기 감소 */
+  }
+}

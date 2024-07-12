@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ⬇️ css link -->
+  <link rel="stylesheet" href="css/players.css">
+  <link rel="stylesheet" href="css/defult.css">
+  <!-- ⬇️ 웹페이지 로고 -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- ⬇️ 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ⬇ 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/51772bd9bd.js" crossorigin="anonymous"></script>
+  <!-- ⬇ jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- ⬇ javascript -->
+  <script src="js/script.js" defer></script>
+  <title>KIA타이거즈</title>
+</head>
+
+<body>
+  <header>
+    <!-- 헤더 -->
+    <nav class="navbar">
+      <div class="nav_logo"><a href="index.html">
+          <img src="img/logo_2021.png" alt="home">
+        </a></div>
+
+      <ul class="nav_menu">
+        <li><a href="tigers.html">TIGERS</a></li>
+        <li><a href="players.html">PLAYERS</a></li>
+        <li><a href="#">CONTENTS</a></li>
+        <li><a
+            href="https://m.sports.naver.com/kbaseball/schedule/index?category=kbo&date=2024-05-01&teamCode=HT">GAME</a>
+        </li>
+        <li><a href="#">TICKET</a></li>
+        <li><a href="#">MEMBERSHIP</a></li>
+      </ul>
+
+      <ul class="nav_icon">
+        <li><a href="loginform.html"><i class="fa-solid fa-circle-user fa-xl"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-plus fa-xl"></i></a></li>
+        <li><a href="map.html"><i class="fa-solid fa-map-location-dot fa-xl"></i></a></li>
+        <li><a href="https://teamstore.tigers.co.kr/"><i class="fa-solid fa-store fa-xl"></i></a></li>
+      </ul>
+
+      <a href="#" class="navbar_tooglebtn"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+  </header>
+
+  <!-- 카테고리 이미지 -->
+  <div class="plyerbar_img">
+
+    <h2>⚾️ 코칭스태프 및 선수 ⚾️</h3>
+  </div>
+
+  <!-- player -->
+  <h3 class="player_select"><b>선수단 선택</b> <select class="player" id="select">
+      <option value="1">코칭스태프</option>
+      <option value="2">투수</option>
+      <option value="3">포수</option>
+      <option value="4">내야수</option>
+      <option value="5">외야수</option>
+      <option value="6">군입대선수</option>
+    </select></h3>
+  <section>
+    <div class="list">
+      <ul class="clear" id="coach">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_71_A.png" alt="이범호">
+            <div class="txt">
+              <ul>
+                <li class="position">감독</li>
+                <li class="num">NO.71</li>
+                <li class="name">이범호</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_70_A.png" alt="진갑용">
+            <div class="txt">
+              <ul>
+                <li class="position">수석</li>
+                <li class="num">NO.70</li>
+                <li class="name">진갑용</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_73_A.png" alt="정재훈">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.73</li>
+                <li class="name">정재훈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_85_A.png" alt="이동걸">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.85</li>
+                <li class="name">이동걸</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_77_A.png" alt="홍세완">
+            <div class="txt">
+              <ul>
+                <li class="position">타격</li>
+                <li class="num">NO.77</li>
+                <li class="name">홍세완</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_76_A.png" alt="박기남">
+            <div class="txt">
+              <ul>
+                <li class="position">수비</li>
+                <li class="num">NO.76</li>
+                <li class="name">박기남</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_80_A.png" alt="이현곤">
+            <div class="txt">
+              <ul>
+                <li class="position">주루</li>
+                <li class="num">NO.80</li>
+                <li class="name">이현곤</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_75_A.png" alt="조재영">
+            <div class="txt">
+              <ul>
+                <li class="position">작전</li>
+                <li class="num">NO.75</li>
+                <li class="name">조재영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_83_A.png" alt="타케시">
+            <div class="txt">
+              <ul>
+                <li class="position">배터리</li>
+                <li class="num">NO.83</li>
+                <li class="name">타케시</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t1_A.png" alt="김상훈">
+            <div class="txt">
+              <ul>
+                <li class="position">전략분석</li>
+                <li class="name">김상훈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t2_A.png" alt="방석호">
+            <div class="txt">
+              <ul>
+                <li class="position">전략분석</li>
+                <li class="name">방석호</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t3_A.png" alt="조승범">
+            <div class="txt">
+              <ul>
+                <li class="position">전략분석</li>
+                <li class="name">조승범</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t4_A.png" alt="박규민">
+            <div class="txt">
+              <ul>
+                <li class="position">전략분석</li>
+                <li class="name">박규민</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t5_A.png" alt="박창민">
+            <div class="txt">
+              <ul>
+                <li class="position">총괄트레이너</li>
+                <li class="name">박창민</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t6_A.png" alt="정영">
+            <div class="txt">
+              <ul>
+                <li class="position">트레이닝</li>
+                <li class="name">정영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t7_A.png" alt="정상욱">
+            <div class="txt">
+              <ul>
+                <li class="position">트레이닝</li>
+                <li class="name">정상욱</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t8_A.png" alt="조희영">
+            <div class="txt">
+              <ul>
+                <li class="position">트레이닝</li>
+                <li class="name">조희영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t9_A.png" alt="박준서">
+            <div class="txt">
+              <ul>
+                <li class="position">트레이닝</li>
+                <li class="name">박준서</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_t10_A.png" alt="황종현">
+            <div class="txt">
+              <ul>
+                <li class="position">트레이닝</li>
+                <li class="name">황종현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <ul class="clear hidden" id="pitcher">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_034_A.png" alt="강동훈">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.034</li>
+                <li class="name">강동훈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_36_A.png" alt="강이준">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.36</li>
+                <li class="name">강이준</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_0_A.png" alt="곽도규">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.0</li>
+                <li class="name">곽도규</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_43_A.png" alt="김건국">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.43</li>
+                <li class="name">김건국</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_53_A.png" alt="김기훈">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.53</li>
+                <li class="name">김기훈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_69_A.png" alt="김대유">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.69</li>
+                <li class="name">김대유</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_60_A.png" alt="김도현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.60</li>
+                <li class="name">김도현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_037_A.png" alt="김민재">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.037</li>
+                <li class="name">김민재</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_45_A.png" alt="김민주">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.45</li>
+                <li class="name">김민주</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_21_A.png" alt="김사윤">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.21</li>
+                <li class="name">김사윤</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_24_A.png" alt="김승현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.24</li>
+                <li class="name">김승현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_49_A.png" alt="김유신">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.49</li>
+                <li class="name">김유신</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_38_A.png" alt="김찬민">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.38</li>
+                <li class="name">김찬민</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_033_A.png" alt="김태윤">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.33</li>
+                <li class="name">김태윤</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_32_A.png" alt="김현수">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.32</li>
+                <li class="name">김현수</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_40_A.png" alt="네일">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.40</li>
+                <li class="name">네일</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_03_A.png" alt="박건우">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.03</li>
+                <li class="name">박건우</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_2_31_A.png" alt="박준표">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.31</li>
+                <li class="name">박준표</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_039_A.png" alt="성영탁">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.039</li>
+                <li class="name">성영탁</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_54_A.png" alt="양현종">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.54</li>
+                <li class="name">양현종</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_022_A.png" alt="오규석">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.022</li>
+                <li class="name">오규석</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_10_A.png" alt="유승철">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.10</li>
+                <li class="name">유승철</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_4_A.png" alt="유지성">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.4</li>
+                <li class="name">유지성</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_13_A.png" alt="윤영철">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.13</li>
+                <li class="name">윤영철</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_19_A.png" alt="윤중현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.19</li>
+                <li class="name">윤중현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_015_A.png" alt="이도현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.015</li>
+                <li class="name">이도현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_063_A.png" alt="이송찬">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.63</li>
+                <li class="name">이송찬</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_48_A.png" alt="이의리">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.48</li>
+                <li class="name">이의리</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_20_A.png" alt="이준영">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.20</li>
+                <li class="name">이준영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_33_A.png" alt="이형범">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.34</li>
+                <li class="name">이형범</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_17_A.png" alt="임기영">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.17</li>
+                <li class="name">임기형</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_46_A.png" alt="장민기">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.46</li>
+                <li class="name">장민기</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_50_A.png" alt="장현식">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.50</li>
+                <li class="name">장현식</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_51_A.png" alt="전상현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.51</li>
+                <li class="name">전상현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_62_A.png" alt="정해영">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.62</li>
+                <li class="name">정해영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_67_A.png" alt="조대현">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.67</li>
+                <li class="name">조대현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_39_A.png" alt="최지민">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.39</li>
+                <li class="name">최지민</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_035_A.png" alt="최지웅">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.35</li>
+                <li class="name">최지웅</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_12_A.png" alt="크로우">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.12</li>
+                <li class="name">크로우</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_021_A.png" alt="홍원빈">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.021</li>
+                <li class="name">홍원빈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_41_A.png" alt="황동하">
+            <div class="txt">
+              <ul>
+                <li class="position">투수</li>
+                <li class="num">NO.41</li>
+                <li class="name">황동하</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="clear hidden" id="catcher">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_020_A.png" alt="권혁경">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.020</li>
+                <li class="name">권혁경</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_42_A.png" alt="김태군">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.42</li>
+                <li class="name">김태군</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_44_A.png" alt="이상준">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.44</li>
+                <li class="name">이상준</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_06_A.png" alt="이성주">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.06</li>
+                <li class="name">이성주</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_22_A.png" alt="주효상">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.22</li>
+                <li class="name">주효상</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_26_A.png" alt="한승택">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.26</li>
+                <li class="name">한승택</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_55_A.png" alt="한준수">
+            <div class="txt">
+              <ul>
+                <li class="position">포수</li>
+                <li class="num">NO.55</li>
+                <li class="name">한준수</li>
+              </ul>
+            </div>
+          </div>
+      </ul>
+
+      <ul class="clear hidden" id="infielder">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_038_A.png" alt="강민제">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.038</li>
+                <li class="name">강민제</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_2_A.png" alt="고명성">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.2</li>
+                <li class="name">고명성</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_14_A.png" alt="김규성">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.14</li>
+                <li class="name">김규성</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_5_A.png" alt="김도영">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.5</li>
+                <li class="name">김도영</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_02_A.png" alt="김도월">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.02</li>
+                <li class="name">김도월</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_040_A.png" alt="김두현">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.40</li>
+                <li class="name">김두현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_3_A.png" alt="김선빈">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.3</li>
+                <li class="name">김선빈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_07_A.png" alt="김원경">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.7</li>
+                <li class="name">김원경</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_010_A.png" alt="김재현">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.010</li>
+                <li class="name">김재현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg6/2024_37_A.png" alt="박민">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.37</li>
+                <li class="name">박민</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_05_A.png" alt="박상준">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.05</li>
+                <li class="name">박상준</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_1_A.png" alt="박찬호">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.1</li>
+                <li class="name">박찬호</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_29_A.png" alt="변우혁">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.29</li>
+                <li class="name">변우혁</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_58_A.png" alt="서건창">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.58</li>
+                <li class="name">서건창</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_56_A.png" alt="오선우">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.56</li>
+                <li class="name">오선우</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_9_A.png" alt="오정환">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.9</li>
+                <li class="name">오정환</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_11_A.png" alt="윤도현">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.11</li>
+                <li class="name">윤도현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_01_A.png" alt="장시현">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.01</li>
+                <li class="name">장시현</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_59_A.png" alt="정해원">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.59</li>
+                <li class="name">정해원</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_013_A.png" alt="최수빈">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.013</li>
+                <li class="name">최수빈</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_23_A.png" alt="최정용">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.23</li>
+                <li class="name">최정용</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_6_A.png" alt="홍종표">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.6</li>
+                <li class="name">홍종표</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_52_A.png" alt="황대인">
+            <div class="txt">
+              <ul>
+                <li class="position">내야수</li>
+                <li class="num">NO.52</li>
+                <li class="name">황대인</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="clear hidden" id="outfielder">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_57_A.png" alt="고종욱">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.57</li>
+                <li class="name">고종욱</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_04_A.png" alt="김민수">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.04</li>
+                <li class="name">김민수</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_35_A.png" alt="김석환">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.35</li>
+                <li class="name">김석환</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_27_A.png" alt="김호령">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.27</li>
+                <li class="name">김호령</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_47_A.png" alt="나성범">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.47</li>
+                <li class="name">나성범</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_15_A.png" alt="박정우">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.15</li>
+                <li class="name">박정우</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2023_30_A_2.png" alt="소크라테스">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.30</li>
+                <li class="name">소크라테스</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg5/2024_09_A.png" alt="이영재">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.09</li>
+                <li class="name">이영재</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_25_A.png" alt="이우성">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.25</li>
+                <li class="name">이우성</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_8_A.png" alt="이창진">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.8</li>
+                <li class="name">이창진</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_16_A.png" alt="최원준">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.16</li>
+                <li class="name">최원준</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2024_34_A.png" alt="최형우">
+            <div class="txt">
+              <ul>
+                <li class="position">외야수</li>
+                <li class="num">NO.34</li>
+                <li class="name">최형우</li>
+              </ul>
+            </div>
+          </div>
+        </li>    
+      </ul>
+
+      <ul class="clear hidden" id="soldier">
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2023_15_A.png" alt="강병우">
+            <div class="txt">
+              <ul>
+                <li class="name">강병우</li>
+                <li class="position">2025년 04월 09일 전역</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2023_42_A.png" alt="김선우">
+            <div class="txt">
+              <ul>
+                <li class="name">김선우</li>
+                <li class="position">2025년 06월 17일 전역</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2023_37_A.png" alt="김세일">
+            <div class="txt">
+              <ul>
+                <li class="name">김세일</li>
+                <li class="position">2025년 02월 07일 전역</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2023_2_08_A.png" alt="김양수">
+            <div class="txt">
+              <ul>
+                <li class="name">김양수</li>
+                <li class="position">2025년 05월 23일 전역</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="profile">
+            <img src="https://tigers.co.kr/files/playerImg/tigersImg/2023_2_28_A_2.png" alt="한승연">
+            <div class="txt">
+              <ul>
+                <li class="name">한승연</li>
+                <li class="position">2025년 06월 17일 전역</li>
+              </ul>
+            </div>
+          </div>
+        </li>      
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="container">
+      <!-- 푸터A : 사이트 정보 -->
+      <div class="footA"></div>
+      <!-- 푸터B : 푸터 메뉴 -->
+      <nav class="footB">
+        <div>
+          <h3>MEMBERSHIP</h3>
+          <ul>
+            <li><a href="#">포인트 제도 안내</a></li>
+            <li><a href="#">호랑이 사랑방</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">1:1 문의</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>TICKET</h3>
+          <ul>
+            <li><a href="#">티켓 안내 및 예매</a></li>
+            <li><a href="#">시즌권 안내</a></li>
+            <li><a href="#">스카이박스 시즌권 안내</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">보도자료</a></li>
+            <li><a href="#">타이거즈 뉴스</a></li>
+            <li><a href="#">타이거즈 포토</a></li>
+            <li><a href="#">타이거즈TV</a></li>
+          </ul>
+        </div>
+
+      </nav>
+      <!-- 푸터C : 저작권-->
+      <div class="footC">
+        © KIA Ti corp. All rights reserved.
+      </div>
+      <!-- 푸터D : SNS 아이콘 -->
+      <nav class="footD">
+        <ul>
+          <li><a href="https://twitter.com/Kiatigers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span
+                class="fa fa-twitter" title="Twitter"></span></a></li>
+          <li><a href="https://www.facebook.com/Victory.KiaTigers/?locale=ko_KR"><span class="fa fa-facebook"
+                title="Facebook"></span></a></li>
+          <li><a href="https://namu.wiki/w/KIA%20%ED%83%80%EC%9D%B4%EA%B1%B0%EC%A6%88"><span class="fa fa-google-plus"
+                title="Google Plus"></span></a></li>
+          <li><a href="https://www.instagram.com/always_kia_tigers/reels/"><span class="fa fa-instagram"
+                title="Instagram"></span></a></li>
+          <li><a href="https://www.youtube.com/channel/UCKp8knO8a6tSI1oaLjfd9XA"><span class="fa fa-youtube"
+                title="YouTube"></span></a></li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </footer>
+</body>
+
+</html>

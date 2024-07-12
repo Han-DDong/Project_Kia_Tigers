@@ -1,0 +1,155 @@
+/* 로그인 카테고리 이미지 */
+.login_img {
+  background-image: url(https://tigers.co.kr/img/main/mb_menu_bg.png);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-top: 100px;  
+  width: 100%;
+  height: 150px;
+}
+
+.login_img h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 45px;
+  font-weight: 400;
+  font-family:"Ubuntu Sans", sans-serif;
+  padding-top: 60px;
+}
+
+
+/* 로그인 폼 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: Arial, sans-serif; /* 일관된 서체 사용 */
+  margin: 20px; /* 여백 조정 */
+  background-color: #f0f3f5; /* 배경색 설정 */
+  border: 1px solid #dee2e6; /* 테두리 설정 */
+  border-radius: 8px; /* 경계선 둥글게 처리 */
+  padding: 20px; /* 내부 패딩 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+  background-image: url('https://tigers.co.kr/img/sub/login_ci.png'); /* 백그라운드 이미지 설정 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.divider img {
+  width: 1px;
+  height: 300px;
+  margin: 0 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e01a1a;
+  padding: 5px 0;
+}
+
+.input-container .icon {
+  margin-right: 10px;
+  color: #e01a1a;
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.requirements {
+  font-weight: bold;
+  font-size: 14px;
+  color: #666666;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  flex: 1; /* 플렉스 박스 설정 */
+  padding: 10px;
+  font-size: 1em; /* 부모의 클꼴크기 기준 */
+}
+
+.help-container p, .requirements p, .help-button, .signup-button { /* 텍스트 줄바꿈 방지 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: hidden;
+}
+
+
+.help-container {
+  font-weight: bold;
+  text-align: left;
+}
+
+.help-container p#help {
+  margin-top: 20px;
+}
+
+.help-button, .signup-button {
+  padding: 2px 20px;
+  background-color: #F7F7F7;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.help-button:hover, .signup-button:hover {
+  background-color: #f4f4f4;
+}
+
+ /******************** 모바일 **********************/
+ @media screen and (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+  .divider img {
+      width: 100%;
+      height: 1px;
+      margin: 20px 0;
+  }
+  .login-form {
+      margin-right: 0;
+  }
+  .login-button, .help-button, .signup-button {
+      font-size: 14px;
+      padding: 8px;
+  }
+  .login_img h2 {
+      padding-top: 60px;
+  }
+}
